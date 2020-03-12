@@ -1,0 +1,90 @@
+@import "common.less";
+body {
+    max-width: 750rem / 50;
+    min-width: 320px;
+    margin: 0 auto;
+}
+@remroot:50;
+.search-content {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 88rem / @remroot;
+    background-color: #FFC001;
+    .class {
+        height: 70rem / @remroot;
+        width: 44rem / @remroot;
+        margin: 11rem / @remroot 25rem / @remroot 7rem / @remroot 24rem / @remroot;
+        background: url(../images/classify.png) no-repeat;
+        background-size: 44rem / @remroot 70rem / @remroot;
+        a {
+            display: block;
+            height: 100%;
+        }
+    }
+    .input {
+        flex: 1;
+        input {
+            height: 66rem / @remroot;
+            color: #757575;
+            text-indent: 50rem / @remroot;
+            width: 100%;
+            outline: none;
+            border: none;
+            font-size: 25rem / @remroot;
+            border-radius: 33rem / @remroot;
+            background-color: #FFF2CC;
+        }
+    }
+    .login {
+        height: 70rem / @remroot;
+        width: 75rem / @remroot;
+        text-align: center;
+        line-height: 70rem / @remroot;
+        margin: 10rem / @remroot;
+        a {
+            display: block;
+            height: 100%;
+            color: #fff;
+            font-size: 25rem / @remroot;
+        }
+    }
+}
+.banner {
+    img {
+        width: 100%;
+    }
+}
+.nav {
+    display: flex;
+    a {
+        flex: 1;
+        img {
+            width: 100%;
+        }
+    }
+}
+// nav部分
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+        flex: 20%;
+        width: 150rem / @remroot;
+        height: 140rem / @remroot;
+        text-align: center;
+        img {
+            display: block;
+            margin: 7rem / @remroot auto 0px;
+            width: 82rem / @remroot;
+            height: 82rem / @remroot;
+        }
+        span {
+            font-size: 25rem / @remroot;
+            color: #333;
+        }
+    }
+}
